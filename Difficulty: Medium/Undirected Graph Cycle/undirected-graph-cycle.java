@@ -29,10 +29,10 @@ class GFG {
 
 
 class Solution {
-    private boolean dfs(int node, int parent, int[] visited, ArrayList<ArrayList<Integer>> adjList) {
-        visited[node] = 1;
+    private boolean dfs(int node, int parent, boolean[] visited, ArrayList<ArrayList<Integer>> adjList) {
+        visited[node] = true;
         for(int it : adjList.get(node)) {
-            if(visited[it] == 0) {
+            if(!visited[it]) {
                 if(dfs(it, node, visited, adjList)) return true;
             }
             else if(it != parent) return true;
@@ -42,21 +42,22 @@ class Solution {
     public boolean isCycle(int V, int[][] edges) {
         ArrayList<ArrayList<Integer>> adjList = new ArrayList<ArrayList<Integer>>();
         for(int i=0; i<V; i++) {
-            adjList.add(new ArrayList<>());
-        }        
+            adjList.add(new ArrayList<Integer>());
+        }
         for(int[] edge : edges) {
             int u = edge[0];
             int v = edge[1];
             adjList.get(u).add(v);
             adjList.get(v).add(u);
-        }
-        int[] visited = new int[V];
+        }        
+        boolean[] visited = new boolean[V];
         for(int i=0; i<V; i++) {
-            if(visited[i] == 0) {
+            if(!visited[i]) {
                 if(dfs(i, -1, visited, adjList)) return true;
             }
         }
         return false;
     }
 }
+
 
