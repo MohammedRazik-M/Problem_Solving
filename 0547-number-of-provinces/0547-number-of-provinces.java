@@ -1,35 +1,34 @@
 class Solution {
-    private void dfs(int node, ArrayList<ArrayList<Integer>> adjList, int[] visited) {
-        visited[node] = 1;
-        for(Integer it : adjList.get(node)) {
-            if(visited[it] == 0) {
-                dfs(it, adjList, visited);
+    private void dfs(int node, boolean[] visited, ArrayList<ArrayList<Integer>> adjList) {
+        visited[node] = true;
+        for(int it : adjList.get(node)) {
+            if(!visited[it]) {
+                dfs(it, visited, adjList);
             }
         }
     }
     public int findCircleNum(int[][] isConnected) {
+        int V = isConnected.length;
         ArrayList<ArrayList<Integer>> adjList = new ArrayList<ArrayList<Integer>>();
-        int R = isConnected.length;
-        int C = isConnected[0].length;
-        for(int row=0; row<R; row++) {
-            adjList.add(new ArrayList<Integer>());
+        for(int i=0; i<V; i++) {
+            adjList.add(new ArrayList<>());
         }
-        for(int row=0; row<R; row++) {
-            for(int col=0; col<C; col++) {
-                if(isConnected[row][col] == 1) {
-                   adjList.get(row).add(col);
-                   adjList.get(col).add(row); 
+        for(int i=0; i<V; i++) {
+            for(int j=0; j<V; j++) {    
+                if(isConnected[i][j] == 1 && i != j) {
+                    adjList.get(i).add(j);
+                    adjList.get(j).add(i);
                 }
             }
         }
-        int[] visited = new int[R];
         int count = 0;
-        for(int i=0; i<R; i++) {
-            if(visited[i] == 0) {
+        boolean[] visited = new boolean[V];
+        for(int i=0; i<V; i++) {
+            if(!visited[i]) {
                 count++;
-                dfs(i, adjList, visited);
+                dfs(i, visited, adjList);
             }
         }
         return count;
-    }
+    } 
 }
