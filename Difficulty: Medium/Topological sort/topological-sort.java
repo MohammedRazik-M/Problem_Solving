@@ -53,31 +53,37 @@ class Main {
 
 
 class Solution {
+    private static void dfs(int node, boolean[] visited, ArrayList<ArrayList<Integer>> adjList, Stack<Integer> stack) {
+        visited[node] = true;
+        for(int it : adjList.get(node)) {
+            if(!visited[it]) {
+                dfs(it, visited, adjList, stack);
+            }
+        }
+        stack.push(node);
+    }
     public static ArrayList<Integer> topoSort(int V, int[][] edges) {
-        int[] indegree = new int[V];
+        ArrayList<Integer> topo = new ArrayList<>();
         ArrayList<ArrayList<Integer>> adjList = new ArrayList<ArrayList<Integer>>();
-        for(int i=0; i<V; i++) {
-            adjList.add(new ArrayList<>());
-        }        
+        for(int i=0; i<V; i++) adjList.add(new ArrayList<>());
         for(int[] edge : edges) {
             int u = edge[0];
             int v = edge[1];
             adjList.get(u).add(v);
-            indegree[v]++;
         }
-        Queue<Integer> queue = new ArrayDeque<>();
+        boolean[] visited = new boolean[V];
+        Stack<Integer> stack = new Stack<>();
         for(int i=0; i<V; i++) {
-            if(indegree[i] == 0) queue.add(i);
-        }
-        ArrayList<Integer> topo = new ArrayList<>();
-        while(!queue.isEmpty()) {
-            int node = queue.poll();
-            topo.add(node);
-            for(int it : adjList.get(node)) {
-                indegree[it]--;
-                if(indegree[it] == 0) queue.add(it);
+            if(!visited[i]) {
+                dfs(i, visited, adjList, stack);
             }
+        }
+        while(!stack.isEmpty()) {
+            int node = stack.pop();
+            topo.add(node);
         }
         return topo;
     }
 }
+
+
