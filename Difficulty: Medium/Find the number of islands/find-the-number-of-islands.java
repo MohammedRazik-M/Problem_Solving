@@ -27,20 +27,18 @@ class GFG {
 
 // } Driver Code Ends
 
+class Coords {
+    int row, col;
+    public Coords(int row, int col) {
+        this.row = row;
+        this.col = col;
+    }
+}
 
 class Solution {
     int[] drow = {-1, -1, -1, 0, 0, 1, 1, 1};
     int[] dcol = {-1, 0, 1, -1, 1, -1, 0, 1};
-    private void dfs(char[][] grid, int row, int col, int R, int C, boolean[][] visited) {
-        visited[row][col] = true;
-        for(int i=0; i<8; i++) {
-            int nrow = row + drow[i];
-            int ncol = col + dcol[i];
-            if(nrow >= 0 && nrow < R && ncol >= 0 && ncol < C && !visited[nrow][ncol] && grid[nrow][ncol] == 'L') {
-                dfs(grid, nrow, ncol, R, C, visited);                
-            }
-        }
-    }
+    
     public int countIslands(char[][] grid) {
         int R = grid.length;
         int C = grid[0].length;
@@ -48,9 +46,24 @@ class Solution {
         boolean[][] visited = new boolean[R][C];
         for(int row=0; row<R; row++) {
             for(int col=0; col<C; col++) {
-                if(!visited[row][col] && grid[row][col] == 'L') {
-                    dfs(grid, row, col, R, C, visited);
+                if(grid[row][col] == 'L' && !visited[row][col]) {
                     islandCount++;
+                    Queue<Coords> queue = new ArrayDeque<>();
+                    queue.add(new Coords(row, col));
+                    visited[row][col] = true;
+                    while(!queue.isEmpty()) {
+                        Coords coord = queue.poll();
+                        int r = coord.row;
+                        int c = coord.col;
+                        for(int i=0; i<8; i++) {
+                            int nrow = r + drow[i];
+                            int ncol = c + dcol[i];
+                            if(nrow >= 0 && nrow < R && ncol >= 0 && ncol < C && !visited[nrow][ncol] && grid[nrow][ncol] == 'L') {
+                                queue.add(new Coords(nrow, ncol));
+                                visited[nrow][ncol] = true;
+                            }   
+                        }
+                    }
                 }
             }
         }
