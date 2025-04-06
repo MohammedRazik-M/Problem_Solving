@@ -33,10 +33,9 @@ System.out.println("~");
 }
 // } Driver Code Ends
 
-
 class Pair {
     int row, col;
-    Pair(int row, int col) {
+    public Pair(int row, int col) {
         this.row = row;
         this.col = col;
     }
@@ -47,36 +46,37 @@ class Pair {
         Pair other = (Pair)obj;
         return this.row == other.row && this.col == other.col;
     }
-    @Override
+    @Override 
     public int hashCode() {
         return Objects.hash(row, col);
     }
 }
 
+
 class Solution {
     int[] drow = {-1, 1, 0, 0};
     int[] dcol = {0, 0, -1, 1};
-    private void dfs(int row, int col, boolean[][] visited, int[][] grid, int R, int C, ArrayList<Pair> coords, int brow, int bcol) {
+    private void dfs(int row, int col, int[][] grid, int R, int C, boolean[][] visited, ArrayList<Pair> coords, int brow, int bcol) {
         visited[row][col] = true;
         coords.add(new Pair(row - brow, col - bcol));
         for(int i=0; i<4; i++) {
             int nrow = row + drow[i];
             int ncol = col + dcol[i];
             if(nrow >= 0 && nrow < R && ncol >= 0 && ncol < C && !visited[nrow][ncol] && grid[nrow][ncol] == 1) {
-                dfs(nrow, ncol, visited, grid, R, C, coords, brow, bcol);                
+                dfs(nrow, ncol, grid, R, C, visited, coords, brow, bcol);
             }
         }
     }
     int countDistinctIslands(int[][] grid) {
         int R = grid.length;
         int C = grid[0].length;
-        boolean[][] visited = new boolean[R][C];
         Set<ArrayList<Pair>> set = new HashSet<>();
-        for(int i=0; i<R; i++) {
-            for(int j=0; j<C; j++) {
-                if(!visited[i][j] && grid[i][j] == 1) {
+        boolean[][] visited = new boolean[R][C];
+        for(int row=0; row<R; row++) {
+            for(int col=0; col<C; col++) {
+                if(!visited[row][col] && grid[row][col] == 1) {
                     ArrayList<Pair> coords = new ArrayList<>();
-                    dfs(i, j, visited, grid, R, C, coords, i, j);
+                    dfs(row, col, grid, R, C, visited, coords, row, col);
                     set.add(coords);
                 }
             }
@@ -84,3 +84,5 @@ class Solution {
         return set.size();
     }
 }
+
+
