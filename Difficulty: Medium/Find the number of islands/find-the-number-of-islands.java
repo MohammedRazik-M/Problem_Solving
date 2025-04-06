@@ -31,13 +31,13 @@ class GFG {
 class Solution {
     int[] drow = {-1, -1, -1, 0, 0, 1, 1, 1};
     int[] dcol = {-1, 0, 1, -1, 1, -1, 0, 1};
-    private void dfs(char[][] grid, int row, int col, int R, int C) {
-        grid[row][col] = 'W';
+    private void dfs(char[][] grid, int row, int col, int R, int C, boolean[][] visited) {
+        visited[row][col] = true;
         for(int i=0; i<8; i++) {
             int nrow = row + drow[i];
             int ncol = col + dcol[i];
-            if(nrow >= 0 && nrow < R && ncol >= 0 && ncol < C && grid[nrow][ncol] == 'L') {
-                dfs(grid, nrow, ncol, R, C);                
+            if(nrow >= 0 && nrow < R && ncol >= 0 && ncol < C && !visited[nrow][ncol] && grid[nrow][ncol] == 'L') {
+                dfs(grid, nrow, ncol, R, C, visited);                
             }
         }
     }
@@ -45,10 +45,11 @@ class Solution {
         int R = grid.length;
         int C = grid[0].length;
         int islandCount = 0;
+        boolean[][] visited = new boolean[R][C];
         for(int row=0; row<R; row++) {
             for(int col=0; col<C; col++) {
-                if(grid[row][col] == 'L') {
-                    dfs(grid, row, col, R, C);
+                if(!visited[row][col] && grid[row][col] == 'L') {
+                    dfs(grid, row, col, R, C, visited);
                     islandCount++;
                 }
             }
