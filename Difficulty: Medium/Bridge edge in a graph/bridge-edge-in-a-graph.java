@@ -6,7 +6,6 @@ import java.util.*;
 
 
 class Solution {
-    
     public boolean isBridge(int V, int[][] edges, int c, int d) {
         List<List<Integer>> adj = new ArrayList<>();
         for (int i = 0; i < V; i++) {
@@ -24,7 +23,6 @@ class Solution {
         dfs(c, adj, visited);
         return !visited[d];
     }
-
     private void dfs(int node, List<List<Integer>> adj, boolean[] visited) {
         visited[node] = true;
         for (int neighbor : adj.get(node)) {
