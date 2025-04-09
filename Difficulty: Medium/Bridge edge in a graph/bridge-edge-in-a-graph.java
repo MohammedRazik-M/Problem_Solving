@@ -7,20 +7,20 @@ import java.util.*;
 
 class Solution {
     
-    public boolean isBridge(int v, int[][] edges, int c, int d) {
+    public boolean isBridge(int V, int[][] edges, int c, int d) {
         List<List<Integer>> adj = new ArrayList<>();
-        for (int i = 0; i < v; i++) {
+        for (int i = 0; i < V; i++) {
             adj.add(new ArrayList<>());
         }
         for (int[] edge : edges) {
-            int u = edge[0], vtx = edge[1];
-            adj.get(u).add(vtx);
-            adj.get(vtx).add(u);
+            int u = edge[0], v = edge[1];
+            adj.get(u).add(v);
+            adj.get(v).add(u);
         }
         adj.get(c).remove(Integer.valueOf(d));
         adj.get(d).remove(Integer.valueOf(c));
         
-        boolean[] visited = new boolean[v];
+        boolean[] visited = new boolean[V];
         dfs(c, adj, visited);
         return !visited[d];
     }
