@@ -26,36 +26,30 @@ class GFG {
 
 
 class Solution {
-    private boolean dfs(int node, boolean[] visited, boolean[] pathVisited, ArrayList<ArrayList<Integer>> adjList) {
-        visited[node] = true;
-        pathVisited[node] = true;
-        for(int it : adjList.get(node)) {
-            if(!visited[it]) {
-                if(dfs(it, visited, pathVisited, adjList)) return true;
-            }
-            else if(pathVisited[it]) return true;
-        }
-        pathVisited[node] = false;
-        return false;
-    }
     public boolean isCyclic(int V, int[][] edges) {
+        int count = 0;
+        Queue<Integer> queue = new ArrayDeque<>();
+        int[] indegree = new int[V];
         ArrayList<ArrayList<Integer>> adjList = new ArrayList<ArrayList<Integer>>();
-        for(int i=0; i<V; i++) {
-            adjList.add(new ArrayList<>());
-        }        
+        for(int i=0; i<V; i++) adjList.add(new ArrayList<>());
         for(int[] edge : edges) {
             int u = edge[0];
             int v = edge[1];
             adjList.get(u).add(v);
+            indegree[v]++;
         }
-        boolean[] visited = new boolean[V];
-        boolean[] pathVisited = new boolean[V];
-        
         for(int i=0; i<V; i++) {
-            if(!visited[i]) {
-                if(dfs(i, visited, pathVisited, adjList)) return true;
+            if(indegree[i] == 0) queue.add(i);
+        }
+        while(!queue.isEmpty()) {
+            int node = queue.poll();
+            count++;
+            for(int it : adjList.get(node)) {
+                indegree[it]--;
+                if(indegree[it] == 0) queue.add(it);
             }
         }
-        return false;
+        return (count != V);
     }
 }
+
