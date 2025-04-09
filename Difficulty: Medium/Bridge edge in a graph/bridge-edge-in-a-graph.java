@@ -4,29 +4,13 @@ import java.util.*;
 
 // } Driver Code Ends
 
-class Pair {
-    int src, dest;
-    public Pair(int src, int dest) {
-        this.src = src;
-        this.dest = dest;
-    }
-}
-
 class Solution {
-    int timer = 1;
-    private void dfs(int node, int parent, boolean[] visited, int[] tin, int[] low, List<Pair> bridges, 
-             ArrayList<ArrayList<Integer>> adjList) {
-        visited[node] = true;    
-        tin[node] = low[node] = timer;
-        timer++;
+    private void dfs(int node, boolean[] visited, ArrayList<ArrayList<Integer>> adjList) {
+        visited[node] = true;
         for(int it : adjList.get(node)) {
-            if(it == parent) continue;
             if(!visited[it]) {
-                dfs(it, node, visited, tin, low, bridges, adjList);
-                low[node] = Math.min(low[node], low[it]);
-                if(low[it] > tin[node]) bridges.add(new Pair(it, node));
+                dfs(it, visited, adjList);
             }
-            else low[node] = Math.min(low[node], low[it]);
         }
     }
     public boolean isBridge(int V, int[][] edges, int c, int d) {
@@ -38,21 +22,15 @@ class Solution {
             adjList.get(u).add(v);
             adjList.get(v).add(u);
         }
+        adjList.get(c).remove(Integer.valueOf(d));
+        adjList.get(d).remove(Integer.valueOf(c));
         boolean[] visited = new boolean[V];
-        int[] tin = new int[V];
-        int[] low = new int[V];
-        List<Pair> bridges = new ArrayList<>();
-        for(int i=0; i<V; i++) {
-            if(!visited[i]) {
-                dfs(i, -1, visited, tin, low, bridges, adjList);
-            }
-        }
-        for(Pair pair : bridges) {
-            if((pair.src == c && pair.dest == d) || (pair.src == d && pair.dest == c)) return true;
-        }
-        return false;
+        dfs(c, visited, adjList);
+        return !visited[d];
     } 
 }
+
+
 
 
 //{ Driver Code Starts.
