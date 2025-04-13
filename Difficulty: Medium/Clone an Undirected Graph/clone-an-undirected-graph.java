@@ -144,8 +144,7 @@ class GFG {
 */
 class Solution {
     Node cloneGraph(Node node) {
-        if(node == null) return node;
-        
+        if(node == null) return null;
         Map<Node, Node> map = new HashMap<>();
         Queue<Node> queue = new ArrayDeque<>();
         
@@ -164,9 +163,11 @@ class Solution {
                 map.get(curr).neighbors.add(map.get(neighbor));
             }
         }
+        
         return clone;
     }
 }
+
 
 
 
