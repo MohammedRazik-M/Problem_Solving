@@ -36,40 +36,36 @@ class Node {
 }
 
 class Trie {
+    
     private static Node root;
 
     public Trie() {
         root = new Node();
     }
 
-    
     public void insert(String word) {
         Node node = root;
-        for(int index=0; index<word.length(); index++) {
-            if(!node.containsKey(word.charAt(index))) {
-                node.put(word.charAt(index), new Node());
-            }
-            node = node.get(word.charAt(index));
+        for(char ch : word.toCharArray()) {
+            if(!node.containsKey(ch)) node.put(ch, new Node());
+            node = node.get(ch);
         }
         node.setEnd();
-    } 
+    }
 
-    
     public boolean search(String word) {
         Node node = root;
-        for(int index=0; index<word.length(); index++) {
-            if(!node.containsKey(word.charAt(index))) return false;
-            node = node.get(word.charAt(index));            
+        for(char ch : word.toCharArray()) {
+            if(!node.containsKey(ch)) return false;
+            node = node.get(ch);
         }
         return node.isEnd();
     }
-        
-    
+
     public boolean isPrefix(String word) {
         Node node = root;
-        for(int index=0; index<word.length(); index++) {
-            if(!node.containsKey(word.charAt(index))) return false;
-            node = node.get(word.charAt(index));
+        for(char ch : word.toCharArray()) {
+            if(!node.containsKey(ch)) return false;
+            node = node.get(ch);
         }
         return true;
     }
