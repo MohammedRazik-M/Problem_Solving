@@ -35,15 +35,22 @@ class GFG {
 class Solution {
 
     ArrayList<Integer> nthRowOfPascalTriangle(int n) {
-        ArrayList<Integer> res = new ArrayList<>();
-        long value = 1;
-        res.add((int) value);
+        ArrayList<Integer> prev = new ArrayList<>();
+        prev.add(1);
+        int mod = 1000000007;
         
         for(int i=1; i<n; i++) {
-            value = value * (n-i);
-            value = value / i;
-            res.add((int) value % (1000000007));
+            ArrayList<Integer> curr = new ArrayList<>();
+            curr.add(1);
+            
+            for(int j=1; j<prev.size(); j++) {
+                int val = (prev.get(j-1) + prev.get(j)) % mod;
+                curr.add(val);
+            }
+            
+            curr.add(1);
+            prev = curr;
         }
-        return res;
+        return prev;
     }
 }
