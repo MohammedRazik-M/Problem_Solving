@@ -35,51 +35,69 @@ System.out.println("~");
 
 // } Driver Code Ends
 
-
-// User function Template for Java
+class Pair {
+    int dist, node;
+    public Pair(int dist, int node) {
+        this.dist = dist;
+        this.node = node;
+    }
+}
 
 class Solution {
-    int findCity(int n, int m, int[][] edges, int distanceThreshold) {
-        int[][] dist = new int[n][n];
-        
-        for(int i=0; i<n; i++) {
-            for(int j=0; j<n; j++) {
-                dist[i][j] = (int)1e9;
+    private void dijkstra(PriorityQueue<Pair> pq, int[] dist, List<List<int[]>> adjList) {
+        while(!pq.isEmpty()) {
+            int distance = pq.peek().dist;
+            int node = pq.peek().node;
+            pq.poll();
+            
+            for(int[] it : adjList.get(node)) {
+                int adjNode = it[0];
+                int adjDist = it[1];
+                int neighborDist = distance + adjDist;
+                if(neighborDist < dist[adjNode]) {
+                    dist[adjNode] = neighborDist;
+                    pq.offer(new Pair(neighborDist, adjNode));
+                }
             }
         }
+    }
+    int findCity(int n, int m, int[][] edges, int distanceThreshold) {
+        
+        int cityMin = distanceThreshold + 1;
+        int cityNode = -1;
+        
+        List<List<int[]>> adjList = new ArrayList<>();
+        
+        for(int i=0; i<n; i++) adjList.add(new ArrayList<>());
         
         for(int[] edge : edges) {
             int u = edge[0];
             int v = edge[1];
-            int distance = edge[2];
-            dist[u][v] = distance;
-            dist[v][u] = distance;
+            int dist = edge[2];
+            adjList.get(u).add(new int[]{v, dist});
+            adjList.get(v).add(new int[]{u, dist});
         }
         
-        for(int i=0; i<n; i++) dist[i][i] = 0;
-        
-        for(int k=0; k<n; k++) {
-            for(int i=0; i<n; i++) {
-                for(int j=0; j<n; j++) {
-                    if(dist[i][k] != (int)1e9 && dist[k][j] != (int)1e9) {
-                        dist[i][j] = Math.min(dist[i][j], dist[i][k] + dist[k][j]);
-                    }
+        for(int city = 0; city < n; city++) {
+            PriorityQueue<Pair> pq = new PriorityQueue<>((a, b) -> a.dist - b.dist);
+            
+            int[] dist = new int[n];
+            Arrays.fill(dist, (int)1e9);
+            
+            pq.offer(new Pair(0, city));
+            dist[city] = 0;
+            
+            dijkstra(pq, dist, adjList);
+            
+            int thresholdCount = 0;
+            for(int d : dist) {
+                if(d <= distanceThreshold) {
+                    thresholdCount++;
                 }
             }
-        }
-        
-        int cityNode = -1;
-        int cityMin = distanceThreshold + 1;
-        for(int i=0; i<n; i++) {
-            int neighborCityCount = 0;
-            for(int j=0; j<n; j++) {
-                if(dist[i][j] <= distanceThreshold) {
-                    neighborCityCount++;
-                }
-            }
-            if(neighborCityCount <= cityMin) {
-                cityMin = neighborCityCount;
-                cityNode = i;
+            if(thresholdCount <=  cityMin) {
+                cityMin = thresholdCount;
+                cityNode = city;
             }
         }
         return cityNode;
