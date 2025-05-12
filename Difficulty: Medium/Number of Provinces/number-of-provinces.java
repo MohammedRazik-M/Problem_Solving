@@ -30,37 +30,48 @@ System.out.println("~");
 }
 // } Driver Code Ends
 
-
-//User function Template for Java
-
-class Solution {
-    private static void dfs(int node, boolean[] visited, List<List<Integer>> adjList) {
-        visited[node] = true;
-        for(int it : adjList.get(node)) {
-            if(!visited[it]) dfs(it, visited, adjList);
+class DisjointSet {
+    int[] parent, size;
+    public DisjointSet(int n) {
+        parent = new int[n];
+        size = new int[n];
+        for(int i=0; i<n; i++) {
+            parent[i] = i;
+            size[i] = 1;
         }
     }
-    static int numProvinces(ArrayList<ArrayList<Integer>> adj, int V) {
-        boolean[] visited = new boolean[V+1];
-        List<List<Integer>> adjList = new ArrayList<>();
-        for(int i=0; i<=V; i++) {
-            adjList.add(new ArrayList<>());
+    public int findUParent(int node) {
+        if(parent[node] == node) return node;
+        return parent[node] = findUParent(parent[node]);
+    }
+    public void unionBySize(int u, int v) {
+        int ulp_u = findUParent(u);
+        int ulp_v = findUParent(v);
+        if(ulp_u == ulp_v) return;
+        if(size[ulp_u] < size[ulp_v]) {
+            parent[ulp_u] = ulp_v;
+            size[ulp_v] += size[ulp_u];
         }
+        else {
+            parent[ulp_v] = ulp_u;
+            size[ulp_u] += size[ulp_v];
+        }
+    }
+}
+class Solution {
+    static int numProvinces(ArrayList<ArrayList<Integer>> adj, int V) {
+        DisjointSet ds = new DisjointSet(V);
         for(int i=0; i<V; i++) {
             for(int j=0; j<V; j++) {
                 if(adj.get(i).get(j) == 1) {
-                    adjList.get(i+1).add(j+1);
-                    adjList.get(j+1).add(i+1);
+                    ds.unionBySize(i, j);
                 }
             }
         }
-        int provincesCount = 0;
-        for(int i=1; i<=V; i++) {
-            if(!visited[i]) {
-                provincesCount++;
-                dfs(i, visited, adjList);
-            }
+        int cnt = 0;
+        for(int node=0; node<V; node++) {
+            if(ds.parent[node] == node) cnt++;
         }
-        return provincesCount;
+        return cnt;
     }
 };
