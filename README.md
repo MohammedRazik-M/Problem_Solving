@@ -8,6 +8,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 | ------- |
 | [0547-number-of-provinces](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0547-number-of-provinces) |
 | [0854-making-a-large-island](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0854-making-a-large-island) |
+| [1300-critical-connections-in-a-network](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/1300-critical-connections-in-a-network) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -22,6 +23,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0547-number-of-provinces](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0547-number-of-provinces) |
+| [1300-critical-connections-in-a-network](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/1300-critical-connections-in-a-network) |
 ## Array
 |  |
 | ------- |
@@ -30,4 +32,8 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0854-making-a-large-island](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0854-making-a-large-island) |
+## Biconnected Component
+|  |
+| ------- |
+| [1300-critical-connections-in-a-network](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/1300-critical-connections-in-a-network) |
 <!---LeetCode Topics End-->
