@@ -11,17 +11,6 @@ class Solution {
 
             if(prev == curr) continue;
 
-            // int i = index-2;
-            // if(i >= 0 && prev == curr) {
-            //     while(i >= 0) {
-            //         if(nums[i] != curr) {
-            //             prev = nums[i];
-            //             break;
-            //         }
-            //         i--;
-            //     }
-            // }
-
             int j = index+2;
             if(j <= n-1 && curr == next) {
                 while(j <= n-1) {
