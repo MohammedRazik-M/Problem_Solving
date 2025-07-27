@@ -28,6 +28,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0854-making-a-large-island](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0854-making-a-large-island) |
+| [2316-count-hills-and-valleys-in-an-array](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/2316-count-hills-and-valleys-in-an-array) |
 ## Matrix
 |  |
 | ------- |
