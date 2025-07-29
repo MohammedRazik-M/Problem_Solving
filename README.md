@@ -37,4 +37,12 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [1300-critical-connections-in-a-network](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/1300-critical-connections-in-a-network) |
+## Linked List
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0206-reverse-linked-list) |
+## Recursion
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
