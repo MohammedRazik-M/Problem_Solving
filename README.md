@@ -27,6 +27,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 ## Array
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0036-valid-sudoku) |
 | [0048-rotate-image](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0048-rotate-image) |
 | [0055-jump-game](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0055-jump-game) |
 | [0073-set-matrix-zeroes](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0073-set-matrix-zeroes) |
@@ -37,6 +38,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 ## Matrix
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0036-valid-sudoku) |
 | [0048-rotate-image](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0048-rotate-image) |
 | [0073-set-matrix-zeroes](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0073-set-matrix-zeroes) |
 | [0289-game-of-life](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0289-game-of-life) |
@@ -74,6 +76,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 ## Hash Table
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0036-valid-sudoku) |
 | [0073-set-matrix-zeroes](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0073-set-matrix-zeroes) |
 ## Math
 |  |
