@@ -10,15 +10,15 @@ class Solution {
             if(ratings[index] > ratings[index-1]) dp[index] = 1 + dp[index-1];
         }
 
+        int minCandies = dp[n-1];
+
         // Right Scan
         for(int index=n-1; index>=1; index--) {
             if(ratings[index-1] > ratings[index]) {
                 dp[index-1] = Math.max(dp[index-1], 1 + dp[index]);
             }
+            minCandies += dp[index-1];
         }
-
-        int minCandies = 0;
-        for(int candies : dp) minCandies += candies;
 
         return minCandies;
     }
