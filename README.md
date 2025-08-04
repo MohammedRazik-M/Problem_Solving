@@ -33,6 +33,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 | [0055-jump-game](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0055-jump-game) |
 | [0073-set-matrix-zeroes](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0073-set-matrix-zeroes) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
+| [0134-gas-station](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0134-gas-station) |
 | [0289-game-of-life](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0289-game-of-life) |
 | [0854-making-a-large-island](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0854-making-a-large-island) |
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/2316-count-hills-and-valleys-in-an-array) |
@@ -71,6 +72,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0055-jump-game) |
+| [0134-gas-station](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0134-gas-station) |
 ## Simulation
 |  |
 | ------- |
