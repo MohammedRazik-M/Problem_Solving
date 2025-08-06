@@ -94,6 +94,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0014-longest-common-prefix) |
+| [0058-length-of-last-word](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0058-length-of-last-word) |
 ## Trie
 |  |
 | ------- |
