@@ -10,7 +10,9 @@ class Solution {
         for(String str : strs) len = Math.min(len, str.length());
 
         StringBuilder result = new StringBuilder();
-        for(int index=0; index<len; index++) {
+        
+        // index is character pointer, k is string pointer.
+        for(int index=0; index<len; index++) { 
             char ch = strs[0].charAt(index);
             for(int k=1; k<n; k++) {
                 if(strs[k].charAt(index) != ch) {
