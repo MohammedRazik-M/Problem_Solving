@@ -70,6 +70,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0022-generate-parentheses) |
 | [0055-jump-game](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0055-jump-game) |
 ## Greedy
 |  |
@@ -96,6 +97,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 | ------- |
 | [0006-zigzag-conversion](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0006-zigzag-conversion) |
 | [0014-longest-common-prefix](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0014-longest-common-prefix) |
+| [0022-generate-parentheses](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0022-generate-parentheses) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0058-length-of-last-word](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0058-length-of-last-word) |
 ## Trie
@@ -106,4 +108,8 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+## Backtracking
+|  |
+| ------- |
+| [0022-generate-parentheses](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0022-generate-parentheses) |
 <!---LeetCode Topics End-->
