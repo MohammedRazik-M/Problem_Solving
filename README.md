@@ -27,6 +27,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 ## Array
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0014-longest-common-prefix) |
 | [0036-valid-sudoku](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0036-valid-sudoku) |
 | [0048-rotate-image](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0054-spiral-matrix) |
@@ -89,4 +90,12 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0048-rotate-image) |
+## String
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0014-longest-common-prefix) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
