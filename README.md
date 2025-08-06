@@ -64,6 +64,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 ## Two Pointers
 |  |
 | ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0061-rotate-list](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0061-rotate-list) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 ## Dynamic Programming
@@ -95,9 +96,14 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 | ------- |
 | [0006-zigzag-conversion](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0006-zigzag-conversion) |
 | [0014-longest-common-prefix](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0014-longest-common-prefix) |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0058-length-of-last-word](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0058-length-of-last-word) |
 ## Trie
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0014-longest-common-prefix) |
+## String Matching
+|  |
+| ------- |
+| [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 <!---LeetCode Topics End-->
