@@ -56,6 +56,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0061-rotate-list](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0061-rotate-list) |
+| [0141-linked-list-cycle](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0141-linked-list-cycle) |
 | [0206-reverse-linked-list](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0206-reverse-linked-list) |
 ## Recursion
 |  |
@@ -67,6 +68,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0061-rotate-list](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0061-rotate-list) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
+| [0141-linked-list-cycle](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0141-linked-list-cycle) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -88,6 +90,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 | ------- |
 | [0036-valid-sudoku](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0036-valid-sudoku) |
 | [0073-set-matrix-zeroes](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0073-set-matrix-zeroes) |
+| [0141-linked-list-cycle](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0141-linked-list-cycle) |
 ## Math
 |  |
 | ------- |
