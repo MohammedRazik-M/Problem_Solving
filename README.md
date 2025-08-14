@@ -27,6 +27,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 ## Array
 |  |
 | ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0004-median-of-two-sorted-arrays) |
 | [0014-longest-common-prefix](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0014-longest-common-prefix) |
 | [0036-valid-sudoku](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0036-valid-sudoku) |
 | [0048-rotate-image](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0048-rotate-image) |
@@ -127,4 +128,12 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0234-palindrome-linked-list) |
+## Binary Search
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0004-median-of-two-sorted-arrays) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0004-median-of-two-sorted-arrays) |
 <!---LeetCode Topics End-->
