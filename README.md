@@ -56,6 +56,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 ## Linked List
 |  |
 | ------- |
+| [0024-swap-nodes-in-pairs](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0024-swap-nodes-in-pairs) |
 | [0061-rotate-list](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0061-rotate-list) |
 | [0141-linked-list-cycle](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0142-linked-list-cycle-ii) |
@@ -65,6 +66,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 ## Recursion
 |  |
 | ------- |
+| [0024-swap-nodes-in-pairs](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0024-swap-nodes-in-pairs) |
 | [0206-reverse-linked-list](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0234-palindrome-linked-list) |
 ## Two Pointers
