@@ -57,6 +57,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 ## Linked List
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0023-merge-k-sorted-lists) |
 | [0024-swap-nodes-in-pairs](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0024-swap-nodes-in-pairs) |
 | [0061-rotate-list](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0061-rotate-list) |
 | [0092-reverse-linked-list-ii](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0092-reverse-linked-list-ii) |
@@ -143,8 +144,17 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0004-median-of-two-sorted-arrays) |
+| [0023-merge-k-sorted-lists](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0023-merge-k-sorted-lists) |
 ## Sliding Window
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0003-longest-substring-without-repeating-characters) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0023-merge-k-sorted-lists](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0023-merge-k-sorted-lists) |
+## Merge Sort
+|  |
+| ------- |
+| [0023-merge-k-sorted-lists](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0023-merge-k-sorted-lists) |
 <!---LeetCode Topics End-->
