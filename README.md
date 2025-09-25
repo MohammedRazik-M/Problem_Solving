@@ -32,6 +32,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 | [0014-longest-common-prefix](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0014-longest-common-prefix) |
 | [0036-valid-sudoku](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0036-valid-sudoku) |
 | [0048-rotate-image](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0048-rotate-image) |
+| [0053-maximum-subarray](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0055-jump-game) |
 | [0073-set-matrix-zeroes](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0073-set-matrix-zeroes) |
@@ -86,6 +87,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0022-generate-parentheses) |
+| [0053-maximum-subarray](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0055-jump-game) |
 ## Greedy
 |  |
@@ -145,6 +147,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0004-median-of-two-sorted-arrays) |
 | [0023-merge-k-sorted-lists](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0023-merge-k-sorted-lists) |
+| [0053-maximum-subarray](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0053-maximum-subarray) |
 ## Sliding Window
 |  |
 | ------- |
