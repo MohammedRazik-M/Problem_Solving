@@ -101,6 +101,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0001-two-sum) |
+| [0003-longest-substring-without-repeating-characters](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0036-valid-sudoku](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0036-valid-sudoku) |
 | [0073-set-matrix-zeroes](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0073-set-matrix-zeroes) |
 | [0141-linked-list-cycle](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0141-linked-list-cycle) |
@@ -112,6 +113,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 ## String
 |  |
 | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0006-zigzag-conversion](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0006-zigzag-conversion) |
 | [0014-longest-common-prefix](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0014-longest-common-prefix) |
 | [0022-generate-parentheses](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0022-generate-parentheses) |
@@ -141,4 +143,8 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0004-median-of-two-sorted-arrays) |
+## Sliding Window
+|  |
+| ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0003-longest-substring-without-repeating-characters) |
 <!---LeetCode Topics End-->
