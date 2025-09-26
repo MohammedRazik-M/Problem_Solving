@@ -1,21 +1,22 @@
 class Solution {
     public boolean judgeCircle(String moves) {
-        int left, right, up, down;  
+        int left, up;
 
-        left = right = up = down = 0;
+        left = up = 0;
 
         for(char ch : moves.toCharArray()) {
             if(ch == 'U') up++;
-            else if(ch == 'D') down++;
+            else if(ch == 'D') up--;
             else if(ch == 'L') left++;
-            else right++;
+            else left--;
         }
 
-        int flag1 = Math.abs(up - down);
-        int flag2 = Math.abs(left - right);
-
-        boolean originFlag = (flag1 == 0 && flag2 == 0);
+        boolean originFlag = (up == 0 && left == 0);
 
         return originFlag;
+
+
+        // TC => O(moves.length())
+        // SC => O(1)
     }
 }
