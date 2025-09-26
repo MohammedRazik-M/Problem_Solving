@@ -39,6 +39,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0134-gas-station](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0134-gas-station) |
 | [0135-candy](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0135-candy) |
+| [0209-minimum-size-subarray-sum](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0209-minimum-size-subarray-sum) |
 | [0289-game-of-life](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0289-game-of-life) |
 | [0854-making-a-large-island](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0854-making-a-large-island) |
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/2316-count-hills-and-valleys-in-an-array) |
@@ -142,6 +143,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0004-median-of-two-sorted-arrays) |
+| [0209-minimum-size-subarray-sum](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0209-minimum-size-subarray-sum) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -152,6 +154,7 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0209-minimum-size-subarray-sum](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0209-minimum-size-subarray-sum) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -160,4 +163,8 @@ This repository serves as a collection of my solutions to various GeeksforGeeks 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0023-merge-k-sorted-lists) |
+## Prefix Sum
+|  |
+| ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/MohammedRazik-M/GFG-GraphSeries/tree/master/0209-minimum-size-subarray-sum) |
 <!---LeetCode Topics End-->
